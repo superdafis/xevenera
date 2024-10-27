@@ -1,0 +1,169 @@
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(14, 89, 79),
+    rgb(99, 135, 73),
+    rgb(152, 189, 125),
+    rgb(164, 179, 91)
+  );
+}
+
+.navbar.blur {
+  backdrop-filter: blur(10px);
+}
+
+.navbar .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav a:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid white;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+header {
+  padding-top: 7.5rem;
+  margin-bottom: 10rem;
+}
+
+header img {
+  box-shadow: 10px 10px 20px rgb(216, 206, 71);
+  width: 400px;
+}
+
+#about {
+  padding-top: 7.5rem;
+  margin-bottom: 10rem;
+}
+
+#about h2 {
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+
+#about p:nth-child(1)::first-letter {
+  float: left;
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-top: -1.2rem;
+}
+#about p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#project {
+  padding-top: 7.5rem;
+  margin-bottom: 10rem;
+}
+
+#project img {
+  width: 70vmin;
+}
+
+#project h2 {
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#project .row .col:nth-child(1) img {
+  box-shadow: 10px 10px 20px rgb(0, 225, 255);
+}
+#project .row .col:nth-child(2) img {
+  box-shadow: 10px 10px 20px rgb(255, 255, 255);
+}
+#project .row .col:nth-child(3) img {
+  box-shadow: 10px 10px 20px rgb(255, 131, 208);
+}
+#project .row .col:nth-child(4) img {
+  box-shadow: 10px 10px 20px rgb(255, 224, 98);
+}
+#project .row .col:nth-child(5) img {
+  box-shadow: 10px 10px 20px rgb(213, 179, 142);
+}
+#project .row .col:nth-child(6) img {
+  box-shadow: 10px 10px 20px rgb(173, 214, 255);
+}
+
+#process {
+  padding-top: 7.5rem;
+  margin-bottom: 20rem;
+}
+
+#process .container h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#process .row .col video {
+  margin: 20px;
+  width: 70vmin;
+  margin-bottom: 1.5rem;
+}
+
+#process .row .col img {
+  width: 70vmin;
+  margin-bottom: 1.5rem;
+}
+
+#contact {
+  padding-top: 7.5rem;
+  margin-bottom: 12rem;
+}
+
+#contact .container h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#contact form .form-label {
+  font-size: 1.2rem;
+}
+
+#contact form textarea {
+  padding: 20px;
+}
+
+footer {
+  background-color: green;
+  padding: 30px;
+}
+
+footer h3 {
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    backdrop-filter: blur(10px);
+  }
+  .navbar .navbar-nav a:hover::after {
+    margin: 0;
+    padding-bottom: 7px;
+    margin-bottom: -10px;
+    animation: navlink20 0.7s;
+    width: 20%;
+  }
+}
